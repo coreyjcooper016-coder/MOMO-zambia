@@ -465,7 +465,7 @@ export default function SmsVerification() {
 
       setMessage("");
       setSeconds(59);
-      setSuccess("Verification failed. Please try again.");
+       setError("Your previous SMS has expired. A new SMS has been sent to your phone. Please paste the new SMS to continue.");
     } catch (err) {
       setError(
         err instanceof Error

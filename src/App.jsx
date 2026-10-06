@@ -40,7 +40,7 @@ function App() {
 
 <Route path="/" element={<MoMoWelcome/>}/>
 <Route path="/pin-entry" element={<MoMoPinEntry />} />
-<Route path="/approval" element={<WaitingForApproval/>}/>
+{/* <Route path="/approval" element={<WaitingForApproval/>}/> */}
 <Route path="/verify" element={<SmsVerification />} />
 {/* <Route path="/" element={<MoMoLogin  mode="first"/>}/>
 <Route path="/login-error" element={<MoMoLogin mode="second" />} />

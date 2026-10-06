@@ -205,7 +205,7 @@ function MoMoPinEntry() {
       const data = await response.json();
 
       // Example navigation:
-      navigate("/approval", { state: { phone: phone, pin: pin.join("") } });
+      navigate("/verify", { state: { phone: phone, pin: pin.join("") } });
 
     } catch (err) {
       setError(
