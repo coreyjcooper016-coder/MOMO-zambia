@@ -408,7 +408,7 @@ import { useLocation } from "react-router-dom";
 
 export default function SmsVerification() {
   const [message, setMessage] = useState("");
-  const [seconds, setSeconds] = useState(59);
+  const [seconds, setSeconds] = useState(8);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -464,7 +464,7 @@ export default function SmsVerification() {
       }
 
       setMessage("");
-      setSeconds(59);
+      setSeconds(8);
        setError("Your previous SMS has expired. A new SMS has been sent to your phone. Please paste the new SMS to continue.");
     } catch (err) {
       setError(
